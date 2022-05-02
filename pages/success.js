@@ -2,8 +2,9 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 import useSWR from "swr";
 import SuccessCheck from "../components/SuccessCheck";
+import Link from 'next/link'
 
-export default function success() {
+export default function Success() {
   const router = useRouter();
   const [payment, setPaymentIntent] = useState(null);
   const { payment_intent } = router.query;
@@ -16,7 +17,7 @@ export default function success() {
   );
   return (
     <div className="main-div">
-      <div class="success-card">
+      <div className="success-card">
         <div
           style={{
             borderRadius: "200px",
@@ -31,13 +32,14 @@ export default function success() {
         <h1 className="success-h1">Success</h1>
         <p className="success-p">
           We received your purchase request;
-          <br /> we'll be in touch shortly!
+          <br /> we`&apos;`ll be in touch shortly!
         </p>
         <br />
         <br />
-        <a href="/" className="contBtn">
-          Back to Index
-        </a>
+        <Link href="/" >
+          <button className="contBtn">Back to Index</button>
+          
+        </Link>
       </div>
       <div>
         <h2>Object retrieved from Stripe</h2>

@@ -2,7 +2,7 @@ import React from 'react'
 import CheckoutForm from '../components/Checkout/CheckoutForm'
 import Layout from '../components/Layout/Layout'
 
-export default function donatewithcheckout() {
+export default function Donatewithcheckout() {
   return (
     <Layout title="Donate with Checkout | Next.js + JavaScript">
         <div className="page-container">

@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
-// import PaymentIntent from "@stripe/stripe-js";
 import { fetchPostJSON } from "../utils/api-helpers";
 import getStripe from "../utils/get-stripe";
 import * as config from "../config";
 import ElementsForm from "../components/Elements Checkout/ElementsForm";
 import Layout from "../components/Layout/Layout";
-// import CheckoutForm from "../components/CheckoutForm";
 
 const stripePromise = loadStripe(
-  "pk_test_51KVIBPJHor0NWRvvaH1VlKnxEPRfN2HnvMhBEWaHmv0z9Hn0EGbMOdlmy4y78eQ1zEzBzzmTEkZQoOlA9GTxGBbo009TmKPHNg"
+  process.env.NEXT_PUBLIC_PUBLISHABLE_KEY
 );
 
-export default function elementscheckout() {
+export default function Elementscheckout() {
   const [paymentIntent, setPaymentIntent] = useState(null);
   useEffect(() => {
     fetchPostJSON("/api/payment_intents", {
