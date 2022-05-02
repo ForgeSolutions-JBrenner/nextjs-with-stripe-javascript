@@ -75,12 +75,10 @@ export default function ElementsForm({ paymentIntent }) {
       payment_intent_id: paymentIntent.id,
     });
     setPayment(response);
-    console.log("payment_response_line78", response);
 
     if (response.statusCode === 500) {
       setPayment({ status: "error" });
       setErrorMessage(response.message);
-      console.log(payment);
       return;
     }
 

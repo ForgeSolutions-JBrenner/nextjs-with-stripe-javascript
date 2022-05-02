@@ -7,7 +7,6 @@ const stripe = new Stripe(process.env.NEXT_PUBLIC_SECRET_KEY);
 export default async function handler(req, res) {
   if (req.method === "POST") {
     const amount = req.body.amount;
-    console.log(req.body);
     try {
       //Validate the amount passed from the client.
       if (!(amount >= MIN_AMOUNT && amount <= MAX_AMOUNT)) {

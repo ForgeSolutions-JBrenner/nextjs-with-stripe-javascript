@@ -36,7 +36,6 @@ export default function CartSummary() {
     }
     clearCart();
     const sessionId = JSON.stringify({ sessionId: response.id });
-    console.log(sessionId);
     //redierectToCheckout(response.id) not functioning properly, workaround using window.location.href
     window.location.href = response.url;
   };

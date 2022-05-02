@@ -37,7 +37,6 @@ export default async function handler(req, res) {
           }
         );
         res.status(200).json(updated_intent);
-        console.log(updated_intent);
         return;
       }
     } catch (error) {
