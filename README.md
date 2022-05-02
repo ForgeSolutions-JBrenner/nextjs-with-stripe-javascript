@@ -12,7 +12,7 @@ This is a full-stack JavaScript example using:
 ## Demo
 
 - Live demo: https://nextjs-typescript-react-stripe-js.vercel.app/
-- CodeSandbox: https://lqwrni.sse.codesandbox.io/donate-with-checkout
+- CodeSandbox: https://lqwrni.sse.codesandbox.io
 - Tutorial: https://dev.to/thorwebdev/type-safe-payments-with-next-js-typescript-and-stripe-4jo7
 
 The demo is running in test mode -- use `4242424242424242` as a test card number with any CVC + future expiration date.
