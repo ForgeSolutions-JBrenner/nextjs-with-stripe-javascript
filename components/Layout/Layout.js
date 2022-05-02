@@ -53,7 +53,7 @@ function Layout({ children, title }) {
           </a>
           .{" View code on "}
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples/with-stripe-typescript"
+            href="https://github.com/ForgeSolutions-JBrenner/nextjs-with-stripe-javascript"
             target="_blank"
             rel="noopener noreferrer"
           >

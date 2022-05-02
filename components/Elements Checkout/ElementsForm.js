@@ -86,7 +86,7 @@ export default function ElementsForm({ paymentIntent }) {
     const { error } = await stripe.confirmPayment({
       elements,
       confirmParams: {
-        return_url: "http://localhost:3000/success",
+        return_url: "https://nextjs-with-stripe-javascript-3t17v02hi-forgesolutions-jbrenner.vercel.app/success",
         payment_method_data: {
           billing_details: {
             name: input.cardholderName,
